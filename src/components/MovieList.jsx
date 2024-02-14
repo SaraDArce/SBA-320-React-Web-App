@@ -2,7 +2,7 @@ import { useRef } from "react";
 import MovieCard from "./MovieCard";
 
 function MovieList(props) {
-  let allMovies = props.movie.map((movie, i) => {
+  let allMovies = props.movies.map((movie, i) => {
     return <MovieCard key={movie.Title + 1} movie={movie} />;
   });
 

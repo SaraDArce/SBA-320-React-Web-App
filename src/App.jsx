@@ -40,11 +40,11 @@ export default function App() {
   // We pass the getMovie function as a prop called moviesearch
   return (
     <div className="App">
+      <Navbar />
       <Routes>
-        {/* <Navbar /> */}
         <Route path="/Contact" element={<Contact />} />
         <Route path="/About" element={<About />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home movies={movies} />} />
         {/* <MovieList movies={movies} /> */}
         {/* <MoviePage /> */}
         {/* <MovieCard /> */}
@@ -52,3 +52,23 @@ export default function App() {
     </div>
   );
 }
+
+// import { Routes, Route } from "react-router-dom";
+// import Home from "./pages/Home";
+// import Contact from "./pages/Contact";
+
+// function App() {
+//   return (
+//     <>
+//       <div>
+//         <Routes>
+//           <Route index element={<Home />} />
+//           <Route path="/home" element={<Home />} />
+//           <Route path="/contact" element={<Contact />} />
+//         </Routes>
+//       </div>
+//     </>
+//   );
+// }
+
+// export default App;

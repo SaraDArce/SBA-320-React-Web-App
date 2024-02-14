@@ -1,18 +1,12 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import MovieList from "../components/MovieList";
 
-const Home = () => {
+const Home = (props) => {
   return (
     <div>
-      <Navbar />
+      <MovieList movies={props.movies} />
     </div>
   );
 };
 
 export default Home;
-
-// export default function Navbar() {
-//   <div>
-//     <Navbar />
-//   </div>;
-// }
